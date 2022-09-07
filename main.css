@@ -1,91 +1,41 @@
-@import url(//fonts.googleapis.com/css?family=Vibur);
-html,body{
-  height:100%
-}
-body {
-  background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
-  background-size:cover;
-  margin:0
-}
-.logo {
-  text-align: center;
-  width: 65%;
-  height: 250px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   user-select: none;
-}
-
-.logo b{
-  font: 400 19vh "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.logo b span{
-  animation: blink linear infinite 2s;
-}
-.logo b span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-}
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+      format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
   }
-  79%{
-     color: #333;
+  
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8357eb;
+    width: 100vw;
+    height: 100vh;
   }
-  80% {
-    
+  
+  main {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 15rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #482896;
+    cursor: pointer;
+  }
+  
+  main:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
     text-shadow: none;
   }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-
-
-/* follow me @nodws */
-#btn-twtr{
-  clear:both;
-  color:#fff;
-  border:2px solid;
-  border-radius:3px;
-  text-align:center;
-  text-decoration:none;
-  display:block;
-  font-family:sans-serif;
-  font-size:14px;
-  width:13em;
-  padding:5px 10px;
-  font-weight:600;
-  position:absolute;
-  bottom:20px;
-  left:0;
-  right:0;
-  margin:0 auto;
-  background:rgba(0,0,0,0.2);
-  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
-  opacity:0.4
-}#btn-twtr:hover{color:#fff;opacity:1}
+  
